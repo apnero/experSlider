@@ -1,0 +1,752 @@
+/*
+skins available:
+	- bullets
+	- thumbs
+*/
+
+/* the container */
+.parallax_perpetuummobile {
+	position:relative;
+}
+.parallax_perpetuummobile img {
+	max-width:none;
+	max-height:none;
+}
+.parallax_perpetuummobile_list {
+	margin:0;
+	padding:0;
+	list-style:none;
+	display:none;
+}
+
+
+
+.parallax_perpetuummobile .contentHolderVisibleWrapper {
+	position:absolute;
+	overflow:hidden;
+}
+.parallax_perpetuummobile .contentHolder {
+	position:absolute;
+}
+.parallax_perpetuummobile .contentHolderUnit {
+	float:left;
+	display:block;
+	overflow:hidden;
+}
+.mycanvas {
+	position:absolute;
+	top:8px;
+	right:10px;
+	z-index:10;
+}
+.myloader {
+	background:url(skins/perpetuummobile/loader.gif);
+	width:37px;
+	height:37px;
+	position:absolute;
+	left:49%;
+	top:49%;
+	z-index:5;
+}
+
+.parallax_perpetuummobile_all_bgArr {
+	position:absolute;
+	overflow:hidden;
+	z-index:0;
+}
+
+.parallax_perpetuummobile_bgArr {
+	position:absolute;
+	z-index:0;
+	/*border:1px solid #F00;*/
+	display:block;
+}
+
+.parallax_perpetuummobile_bgArr_unit_IE78 {
+	display:block;
+	float:left;
+	/*background-position:center center fixed no-repeat;*/
+}
+
+.parallax_perpetuummobile_preloadedImages {
+	width: 0px;
+	height: 0px;
+	display: inline;
+}
+
+
+
+/***bullets SKIN***/
+.parallax_perpetuummobile.bullets .bannerControls {
+	position:absolute;
+	left:0;
+	top:0;
+	/*z-index:1;*/
+	z-index:5;
+	width:100%;
+}
+
+.parallax_perpetuummobile.bullets .leftNav {
+	position:absolute;
+	left:20px;
+	width:41px;
+	height:41px;
+	background:url(skins/perpetuummobile/bullets/leftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.parallax_perpetuummobile.bullets .leftNav:hover {
+	background:url(skins/perpetuummobile/bullets/leftNavON.png) 0 0 no-repeat;
+}
+.parallax_perpetuummobile.bullets .rightNav {
+	position:absolute;
+	right:20px;
+	width:41px;
+	height:41px;
+	background:url(skins/perpetuummobile/bullets/rightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.parallax_perpetuummobile.bullets .rightNav:hover {
+	background:url(skins/perpetuummobile/bullets/rightNavON.png) 0 0 no-repeat;
+}
+.parallax_perpetuummobile.bullets .bottomNav {
+	position:absolute;
+	width:0px;
+	height:24px;
+	bottom:-35px;
+	z-index:3;
+	padding-left:5px;
+}
+.parallax_perpetuummobile.bullets .bottomNavButtonOFF {
+	float:left;
+	display:block;
+	width:14px;
+	height:14px;
+	background:url(skins/perpetuummobile/bullets/bottomNavOFF.png) 0 0 no-repeat;
+	padding-left:9px;
+	cursor: pointer;
+}
+
+.parallax_perpetuummobile.bullets .bottomNavButtonON {
+	float:left;
+	display:block;
+	width:14px;
+	height:14px;
+	padding-left:9px;
+	background:url(skins/perpetuummobile/bullets/bottomNavON.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.parallax_perpetuummobile.bullets .bottomNavLeft {
+	position:absolute;
+	width:0px;
+	display:none;
+	background:#F00;
+	height:24px;
+	bottom:5px;
+	z-index:3;
+}
+
+.parallax_perpetuummobile.bullets .bottomNavRight {
+	position:absolute;
+	width:0px;
+	display:none;
+	height:24px;
+	background:#F00;
+	bottom:5px;
+	z-index:3;
+}
+
+.parallax_perpetuummobile.bullets .bottomOverThumb {
+	position:absolute;
+	width:88px;
+	height:95px;
+	background:url(skins/perpetuummobile/bullets/bottomOverThumbBg.png) 0px 0px no-repeat;
+	bottom:25px;
+	margin-left:-44px;
+}
+.parallax_perpetuummobile.bullets .innerBottomOverThumb {
+	position:relative;
+	width:80px;
+	height:80px;
+	margin:4px 0 0 4px;
+	overflow:hidden;
+}
+.parallax_perpetuummobile.bullets .bottomOverThumb img {
+
+}
+.parallax_perpetuummobile.bullets .playOver {
+	position:absolute;
+	width:73px;
+	height:73px;
+	background:url(skins/perpetuummobile/bullets/play_overOFF.png) 0 0 no-repeat;
+	display:none;
+	z-index:4;
+	cursor: pointer;
+}
+
+.parallax_perpetuummobile.bullets .playOver:hover {
+	background:url(skins/perpetuummobile/bullets/play_overON.png) 0 0 no-repeat;
+	display:none;
+	z-index:4;
+	cursor: pointer;
+}
+
+
+
+
+
+
+/***thumbs SKIN***/
+.parallax_perpetuummobile.thumbs .bannerControls {
+	position:absolute;
+	left:0;
+	top:0;
+	/*z-index:1;*/
+	z-index:5;
+	width:100%;
+}
+
+.parallax_perpetuummobile.thumbs .leftNav {
+	position:absolute;
+	left:20px;
+	width:41px;
+	height:41px;
+	background:url(skins/perpetuummobile/thumbs/leftNavOFF.png);
+	cursor: pointer;
+}
+.parallax_perpetuummobile.thumbs .leftNav:hover {
+	background:url(skins/perpetuummobile/thumbs/leftNavON.png) 0 0 no-repeat;
+}
+.parallax_perpetuummobile.thumbs .rightNav {
+	position:absolute;
+	right:20px;
+	width:41px;
+	height:41px;
+	background:url(skins/perpetuummobile/thumbs/rightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+.parallax_perpetuummobile.thumbs .rightNav:hover {
+	background:url(skins/perpetuummobile/thumbs/rightNavON.png) 0 0 no-repeat;
+}
+.parallax_perpetuummobile.thumbs .bottomNav {
+	position:absolute;
+	width:0px;
+	height:24px;
+	bottom:-35px;
+	z-index:3;
+	xpadding-left:9px;
+
+}
+.parallax_perpetuummobile.thumbs .bottomNavButtonOFF {
+	float:left;
+	display:block;
+	width:14px;
+	height:14px;
+	background:url(skins/perpetuummobile/thumbs/bottomNavOFF.png) 0 0 no-repeat;
+	xpadding-left:9px;
+	cursor: pointer;
+}
+
+.parallax_perpetuummobile.thumbs .bottomNavButtonON {
+	float:left;
+	display:block;
+	width:14px;
+	height:14px;
+	xpadding-left:9px;
+	background:url(skins/perpetuummobile/thumbs/bottomNavON.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.parallax_perpetuummobile.thumbs .bottomNavLeft {
+	position:absolute;
+	width:0px;
+	display:none;
+	background:#F00;
+	height:24px;
+	bottom:5px;
+	z-index:3;
+}
+
+.parallax_perpetuummobile.thumbs .bottomNavRight {
+	position:absolute;
+	width:0px;
+	display:none;
+	height:24px;
+	background:#F00;
+	bottom:5px;
+	z-index:3;
+}
+
+.parallax_perpetuummobile.thumbs .bottomOverThumb {
+	position:absolute;
+	width:88px;
+	height:95px;
+	background:url(skins/perpetuummobile/thumbs/bottomOverThumbBg.png) 0px 0px no-repeat;
+	bottom:25px;
+	margin-left:-44px;
+}
+.parallax_perpetuummobile.thumbs .innerBottomOverThumb {
+	position:relative;
+	width:80px;
+	height:80px;
+	margin:4px 0 0 4px;
+	overflow:hidden;
+}
+.parallax_perpetuummobile.thumbs .bottomOverThumb img {
+
+}
+.parallax_perpetuummobile.thumbs .playOver {
+	position:absolute;
+	width:73px;
+	height:73px;
+	background:url(skins/perpetuummobile/thumbs/play_overOFF.png) 0 0 no-repeat;
+	display:none;
+	z-index:4;
+	cursor: pointer;
+}
+
+.parallax_perpetuummobile.thumbs .playOver:hover {
+	background:url(skins/perpetuummobile/thumbs/play_overON.png) 0 0 no-repeat;
+	display:none;
+	z-index:4;
+	cursor: pointer;
+}
+
+/* thumbs */
+.parallax_perpetuummobile.thumbs .thumbsHolderWrapper {
+	position:absolute;
+	height:135px;
+	width:100%;
+	overflow:hidden;
+	padding:0;
+	z-index:2;
+}
+.parallax_perpetuummobile.thumbs .thumbsHolderVisibleWrapper {
+	position:absolute;
+	width:100%;
+	height:135px;
+	overflow:hidden;
+}
+.parallax_perpetuummobile.thumbs .thumbsHolder {
+	position:absolute;	
+}
+.parallax_perpetuummobile.thumbs .thumbsHolder_ThumbOFF {
+	float:left;
+	display:block;
+	width:95px;
+	height:65px;
+	cursor: pointer;
+}
+
+
+.parallax_perpetuummobile.thumbs .thumbsHolder_ThumbOFF img {
+	position:relative;
+}
+
+.parallax_perpetuummobile.thumbs .thumbsHolder_ThumbON {
+	background:url(skins/perpetuummobile/thumbs/thumbActiveArrow.png) center 0px no-repeat;
+}
+
+.parallax_perpetuummobile.thumbs .thumbsHolder_ThumbON img {
+	position:relative;
+}
+
+
+.parallax_perpetuummobile.thumbs .carouselLeftNav {
+	position:absolute;
+	width:16px;
+	height:135px;
+	background:url(skins/perpetuummobile/thumbs/carouselLeftNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.parallax_perpetuummobile.thumbs .carouselLeftNav:hover {
+	background:url(skins/perpetuummobile/thumbs/carouselLeftNavON.png) 0 0 no-repeat;
+}
+
+.parallax_perpetuummobile.thumbs .carouselLeftNavDisabled {
+	background:url(skins/perpetuummobile/thumbs/carouselLeftNavDisable.png) 0 0 no-repeat;
+	cursor:default;
+}
+.parallax_perpetuummobile.thumbs .carouselLeftNavDisabled:hover {
+	background:url(skins/perpetuummobile/thumbs/carouselLeftNavDisable.png) 0 0 no-repeat;
+}
+
+.parallax_perpetuummobile.thumbs .carouselRightNav {
+	position:absolute;
+	width:16px;
+	height:135px;
+	background:url(skins/perpetuummobile/thumbs/carouselRightNavOFF.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+
+.parallax_perpetuummobile.thumbs .carouselRightNav:hover {
+	background:url(skins/perpetuummobile/thumbs/carouselRightNavON.png) 0 0 no-repeat;
+}
+
+.parallax_perpetuummobile.thumbs .carouselRightNavDisabled {
+	background:url(skins/perpetuummobile/thumbs/carouselRightNavDisable.png) 0 0 no-repeat;
+	cursor:default;
+}
+.parallax_perpetuummobile.thumbs .carouselRightNavDisabled:hover {
+	background:url(skins/perpetuummobile/thumbs/carouselRightNavDisable.png) 0 0 no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+/***Text Styles***/
+
+
+.parallax_perpetuummobile_texts {
+	position:absolute;
+	z-index:2;
+	/*display: none;*/
+	width:100%;
+}
+.parallax_perpetuummobile_text_line {
+	position:absolute;
+	display: none;
+}
+
+
+/****bullets Texts***/
+
+.textElement11_bullets {
+	width:35%;
+	text-align:right;
+	font: bold 32px/38px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color: #FFFFFF;
+}
+
+.textElement12_bullets {
+	text-align:right;
+	font: 15px/20px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#000000;
+	width:32%;
+}
+
+.textElement12_bullets a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#9c1513;
+	text-decoration:none;
+}
+
+.textElement12_bullets a:hover {
+	text-decoration:underline;
+}
+
+
+.textElement21_bullets {
+	width:40%;
+	font: 16px/23px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+.textElement22_bullets {
+	width:40%;
+	font: bold 26px/33px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+.textElement30_bullets {
+    background: url("skins/perpetuummobile/bullets/textBg_transparency70.png") repeat scroll 0 0 transparent;
+    width: 34%;
+	height: 10%;
+    text-align: left;
+    
+}
+
+.textElement31_bullets {
+	width:40%;
+	font: 18px/26px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform: capitalize;
+}
+.textElement32_bullets {
+	width:46%;
+	font: bold 22px/30px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+/****bulletsFullWidth Texts***/
+
+.textElement11_bulletsFW {
+	width:25%;
+	text-align:right;
+	font: 44px/48px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color: #000;
+}
+
+.textElement12_bulletsFW {
+	text-align:right;
+	font: 22px/26px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#000000;
+	width:23%;
+}
+
+.textElement12_bulletsFW a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#9c1513;
+	text-decoration:none;
+}
+
+.textElement12_bulletsFW a:hover {
+	text-decoration:underline;
+}
+
+
+
+.textElement21_bulletsFW {
+	width:26%;
+	font: 22px/32px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+.textElement22_bulletsFW {
+	xwidth:26%;
+	font: bold 38px/44px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+.textElement30_bulletsFW {
+    background: url("skins/perpetuummobile/bullets/textBg_transparency70.png") repeat scroll 0 0 transparent;
+    width: 24%;
+	height: 12%;
+    text-align: left;
+    
+}
+.textElement31_bulletsFW {
+	font: 28px/36px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform: capitalize;
+}
+.textElement32_bulletsFW {
+	xwidth:46%;
+	font: bold 32px/40px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+
+
+
+
+
+
+/****thumbs Texts***/
+
+.textElement11_thumbs {
+	width:35%;
+	text-align:right;
+	font: bold 32px/38px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color: #FFFFFF;
+}
+
+.textElement12_thumbs {
+	text-align:right;
+	font: 15px/20px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#000000;
+	width:32%;
+}
+
+.textElement12_thumbs a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#9c1513;
+	text-decoration:none;
+}
+
+.textElement12_thumbs a:hover {
+	text-decoration:underline;
+}
+
+
+.textElement21_thumbs {
+	width:40%;
+	font: 16px/23px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+.textElement22_thumbs {
+	width:40%;
+	font: bold 26px/33px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+.textElement30_thumbs {
+    background: url("skins/perpetuummobile/bullets/textBg_transparency70.png") repeat scroll 0 0 transparent;
+    width: 34%;
+	height: 10%;
+    text-align: left;
+    
+}
+
+.textElement31_thumbs {
+	font: 18px/26px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform: capitalize;
+}
+.textElement32_thumbs {
+	xwidth:46%;
+	font: bold 22px/30px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+
+
+/****thumbsFullWidth Texts***/
+
+.textElement11_thumbsFW {
+	width:25%;
+	text-align:right;
+	font: 44px/48px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color: #000;
+}
+
+.textElement12_thumbsFW {
+	text-align:right;
+	font: 22px/26px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#000000;
+	width:23%;
+}
+
+.textElement12_thumbsFW a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#9c1513;
+	text-decoration:none;
+}
+
+.textElement12_thumbsFW a:hover {
+	text-decoration:underline;
+}
+
+
+
+.textElement21_thumbsFW {
+	width:26%;
+	font: 22px/32px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+.textElement22_thumbsFW {
+	xwidth:26%;
+	font: bold 38px/44px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+.textElement30_thumbsFW {
+    background: url("skins/perpetuummobile/bullets/textBg_transparency70.png") repeat scroll 0 0 transparent;
+    width: 24%;
+	height: 12%;
+    text-align: left;
+    
+}
+.textElement31_thumbsFW {
+	font: 28px/36px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform: capitalize;
+}
+.textElement32_thumbsFW {
+	xwidth:46%;
+	font: bold 32px/40px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+
+
+
+
+
+
+
+
+/****sideBar Texts***/
+
+.textElement11_sideBar {
+	text-align:left;
+	font: bold 42px/47px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color: #FFFFFF;
+}
+
+.textElement12_sideBar {
+	text-align:left;
+	font: 15px/19px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#ffffff;
+}
+
+.textElement12_sideBar a {
+	font: 'Droid Sans', Verdana, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#490000;
+	text-decoration:none;
+}
+
+.textElement12_sideBar a:hover {
+	text-decoration:underline;
+}
+
+
+
+.textElement20_sideBar {
+    background: url("skins/perpetuummobile/bullets/textBg_transparency70.png") repeat scroll 0 0 transparent;
+    width: 32%;
+	height: 26%;
+    text-align: left;
+    
+}
+
+.textElement21_sideBar {
+	width:40%;
+	font: 14px/19px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform: capitalize;
+}
+.textElement22_sideBar {
+	width:40%;
+	font: bold 16px/24px 'Droid Sans', Verdana, Helvetica, sans-serif;
+	color:#FFFFFF;
+	text-transform:uppercase;
+}
+
+.hideElement {
+	display:none;
+}
+
